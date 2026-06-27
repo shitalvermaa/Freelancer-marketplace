@@ -8,53 +8,54 @@ function FeaturedFreelancers() {
 
       <div className="flex justify-center gap-6 flex-wrap">
 
-        <div className="border p-6 rounded-lg">
-          <h3 className="font-bold">Shashilata Chauhan</h3>
-          <p>Web Developer</p>
-          <button className="bg-green-500 text-white px-4 py-2 rounded mt-3 hover:bg-green-600 cursor-pointer">
+         <div className="border border-emerald-200 p-6 rounded-3xl bg-gradient-to-r from-emerald-400 to-teal-500 hover:from-emerald-500 hover:to-teal-600 transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-xl cursor-default">
+          <h3 className="font-bold text-white text-lg">Shashilata Chauhan</h3>
+          <p className="text-emerald-50">Web Developer</p>
+          <button className="bg-white text-emerald-700 px-4 py-2 rounded-xl mt-3 hover:bg-emerald-50 hover:text-teal-700 transition-all duration-300 cursor-pointer font-medium">
             View Portfolio
           </button>
         </div>
 
-        <div className="border p-6 rounded-lg">
-          <h3 className="font-bold">Kritika Singh</h3>
-          <p>Graphic Designer</p>
-          <button className="bg-green-500 text-white px-4 py-2 rounded mt-3 hover:bg-green-600 cursor-pointer">
+        <div className="border border-emerald-200 p-6 rounded-3xl bg-gradient-to-r from-emerald-400 to-teal-500 hover:from-emerald-500 hover:to-teal-600 transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-xl cursor-default">
+          <h3 className="font-bold text-white text-lg">Kritika Singh</h3>
+          <p className="text-emerald-50">Graphic Designer</p>
+          <button className="bg-white text-emerald-700 px-4 py-2 rounded-xl mt-3 hover:bg-emerald-50 hover:text-teal-700 transition-all duration-300 cursor-pointer font-medium">
             View Portfolio
           </button>
         </div>
 
-        <div className="border p-6 rounded-lg">
-          <h3 className="font-bold">Anushka Pandey</h3>
-          <p>Content Writer</p>
-          <button className="bg-green-500 text-white px-4 py-2 rounded mt-3 hover:bg-green-600 cursor-pointer">
+        <div className="border border-emerald-200 p-6 rounded-3xl bg-gradient-to-r from-emerald-400 to-teal-500 hover:from-emerald-500 hover:to-teal-600 transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-xl cursor-default">
+          <h3 className="font-bold text-white text-lg">Anushka Pandey</h3>
+          <p className="text-emerald-50">Content Writer</p>
+          <button className="bg-white text-emerald-700 px-4 py-2 rounded-xl mt-3 hover:bg-emerald-50 hover:text-teal-700 transition-all duration-300 cursor-pointer font-medium">
             View Portfolio
           </button>
         </div>
 
-        <div className="border p-6 rounded-lg">
-          <h3 className="font-bold">Sagar Verma</h3>
-          <p>UI/UX Designer</p>
-          <button className="bg-green-500 text-white px-4 py-2 rounded mt-3 hover:bg-green-600 cursor-pointer">
+        <div className="border border-emerald-200 p-6 rounded-3xl bg-gradient-to-r from-emerald-400 to-teal-500 hover:from-emerald-500 hover:to-teal-600 transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-xl cursor-default">
+          <h3 className="font-bold text-white text-lg">Sagar Verma</h3>
+          <p className="text-emerald-50">UI/UX Designer</p>
+          <button className="bg-white text-emerald-700 px-4 py-2 rounded-xl mt-3 hover:bg-emerald-50 hover:text-teal-700 transition-all duration-300 cursor-pointer font-medium">
             View Portfolio
           </button>
         </div>
 
-        <div className="border p-6 rounded-lg">
-          <h3 className="font-bold">Ishika Singh</h3>
-          <p>Mobile App Developer</p>
-          <button className="bg-green-500 text-white px-4 py-2 rounded mt-3 hover:bg-green-600 cursor-pointer">
+        <div className="border border-emerald-200 p-6 rounded-3xl bg-gradient-to-r from-emerald-400 to-teal-500 hover:from-emerald-500 hover:to-teal-600 transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-xl cursor-default">
+          <h3 className="font-bold text-white text-lg">Ishika Singh</h3>
+          <p className="text-emerald-50">Mobile App Developer</p>
+          <button className="bg-white text-emerald-700 px-4 py-2 rounded-xl mt-3 hover:bg-emerald-50 hover:text-teal-700 transition-all duration-300 cursor-pointer font-medium">
             View Portfolio
           </button>
         </div>
 
-        <div className="border p-6 rounded-lg">
-          <h3 className="font-bold">Arjun Mehta</h3>
-          <p>Digital Marketer</p>
-          <button className="bg-green-500 text-white px-4 py-2 rounded mt-3 hover:bg-green-600 cursor-pointer">
+        <div className="border border-emerald-200 p-6 rounded-3xl bg-gradient-to-r from-emerald-400 to-teal-500 hover:from-emerald-500 hover:to-teal-600 transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-xl cursor-default">
+          <h3 className="font-bold text-white text-lg">Arjun Mehta</h3>
+          <p className="text-emerald-50">Digital Marketer</p>
+          <button className="bg-white text-emerald-700 px-4 py-2 rounded-xl mt-3 hover:bg-emerald-50 hover:text-teal-700 transition-all duration-300 cursor-pointer font-medium">
             View Portfolio
           </button>
         </div>
+
 
       </div>
 

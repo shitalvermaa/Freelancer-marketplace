@@ -1,6 +1,6 @@
 function Footer() {
   return (
-    <footer className="bg-green-600 text-white text-center py-5 mt-10">
+    <footer className="bg-gradient-to-r from-emerald-500 to-teal-500 hover:from-emerald-600 hover:to-teal-600text-white text-center py-5 mt-10">
 
       <h2 className="text-xl font-bold mb-2">
         FreelancerMarketplace

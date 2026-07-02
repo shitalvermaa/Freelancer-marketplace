@@ -27,15 +27,23 @@ function Login() {
 
       alert("Login Successful");
 
+       if (storedUser.role === "Freelancer") {
+
       navigate("/dashboard");
 
     } else {
 
-      alert("Invalid Email or Password");
+      navigate("/client-dashboard");
 
     }
 
-  };
+  } else {
+
+    alert("Invalid Email or Password");
+
+  }
+
+};
 
   return (
     <div className="min-h-screen flex justify-center items-center">

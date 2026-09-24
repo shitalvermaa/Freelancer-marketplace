@@ -1,6 +1,4 @@
-// Populates the database with demo users, projects and a portfolio,
-// so the app isn't empty on first run.
-// Run with: node seed.js
+
 
 require('dotenv').config();
 const bcrypt = require('bcryptjs');

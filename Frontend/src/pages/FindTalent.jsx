@@ -45,8 +45,6 @@ function FindTalent() {
       about: freelancer.about,
     };
 
-    // Passed via router state (not localStorage) so viewing someone else's
-    // portfolio never overwrites the logged-in user's own saved portfolio.
     navigate("/portfolio-preview", { state: { viewedPortfolio: realPortfolioData } });
   };
 

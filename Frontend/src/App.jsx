@@ -11,6 +11,7 @@ import PortfolioForm from "./pages/PortfolioForm";
 import PortfolioPreview from "./pages/PortfolioPreview";
 import ClientDashboard from "./pages/ClientDashboard";
 import CategoryDetail from "./pages/CategoryDetail";
+import AppliedProjects from "./pages/AppliedProjects";
 function App(){
   return(
    <div>
@@ -28,6 +29,7 @@ function App(){
         <Route path="/portfolio-preview" element={<PortfolioPreview />} />
         <Route path="/client-dashboard" element={<ClientDashboard />} />
         <Route path="/category/:categoryName" element={<CategoryDetail />} />
+        <Route path="/applied-projects" element={<AppliedProjects />} />
       </Routes>
 
     </div>

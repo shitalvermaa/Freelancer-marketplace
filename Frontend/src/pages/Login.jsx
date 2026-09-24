@@ -3,56 +3,53 @@ import { FcGoogle } from "react-icons/fc";
 import { useState } from "react";
 
 function Login() {
-
   const navigate = useNavigate();
 
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
-  const handleLogin = () => {
-
-    const storedUser = JSON.parse(localStorage.getItem("user"));
-
-    if (!storedUser) {
-      alert("No account found. Please Sign Up first.");
+  const handleLogin = async () => {
+    if (!email || !password) {
+      alert("Please fill all fields");
       return;
     }
 
-    if (
-      email === storedUser.email &&
-      password === storedUser.password
-    ) {
+    try {
+      const response = await fetch("http://localhost:5000/api/auth/login", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ email, password }),
+      });
 
-      localStorage.setItem("isLoggedIn", "true");
+      const data = await response.json();
 
-      alert("Login Successful");
-
-       if (storedUser.role === "Freelancer") {
-
-      navigate("/dashboard");
-
-    } else {
-
-      navigate("/client-dashboard");
-
+      if (response.ok) {
+        localStorage.setItem("user", JSON.stringify(data.user));
+        localStorage.setItem("token", data.token);
+        window.dispatchEvent(new Event("authchange"));
+        alert("Login Successful");
+        
+        // Dono seedha dashboard par hi land karenge
+        navigate("/dashboard"); 
+      } else {
+        // 🚨 FINAL FIX: Agar backend bolta hai user nahi mila, toh automatic signup par phekega
+        alert(data.message || "Login failed");
+        if (response.status === 404 || data.message?.includes("signup first")) {
+          navigate("/signup");
+        }
+      }
+    } catch (error) {
+      console.error("Login Error:", error);
+      alert("Something went wrong. Is your backend server running?");
     }
-
-  } else {
-
-    alert("Invalid Email or Password");
-
-  }
-
-};
+  };
 
   return (
     <div className="min-h-screen flex justify-center items-center">
-
       <div className="border p-8 rounded-lg w-80">
-
-        <h2 className=" text-2xl font-bold text-center mb-6">
-          Login
-        </h2>
+        <h2 className="text-2xl font-bold text-center mb-6">Login</h2>
 
         <input
           type="email"
@@ -86,16 +83,11 @@ function Login() {
 
         <p className="text-center mt-4">
           Don't have an account?
-          <Link
-            to="/signup"
-            className="hover:text-green-700 text-green-500 ml-1"
-          >
+          <Link to="/signup" className="hover:text-green-700 text-green-500 ml-1">
             Sign Up
           </Link>
         </p>
-
       </div>
-
     </div>
   );
 }

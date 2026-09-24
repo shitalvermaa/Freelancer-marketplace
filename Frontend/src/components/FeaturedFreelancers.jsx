@@ -76,7 +76,6 @@ export default FeaturedFreelancers;
 
 
 
-
 // function FeaturedFreelancers() {
 //   return (
 //     <section className="py-10">
